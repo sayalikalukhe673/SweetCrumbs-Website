@@ -1,7 +1,7 @@
 
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
-import "./Menu/Menu.css";
+import "./Menu/menu.css";
 import MenuCard from "./Menu/MenuCard";
 import MenuPage from "./Menu/MenuPage";
 import CakeDesigns from "./Menu/CakeDesigns";
