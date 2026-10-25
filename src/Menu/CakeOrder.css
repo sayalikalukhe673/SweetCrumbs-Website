@@ -1,0 +1,416 @@
+
+.cake-order-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 24px 70px;
+  color: #432a32;
+}
+
+.order-back-btn {
+  border: 1px solid #e4cbd3;
+  background: #fff;
+  color: #6f263d;
+  padding: 11px 18px;
+  border-radius: 9px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.order-heading {
+  text-align: center;
+  margin: 35px 0;
+}
+
+.order-eyebrow {
+  color: #9a5470;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+
+.order-heading h1 {
+  font-size: clamp(28px, 4vw, 42px);
+  margin: 10px 0;
+}
+
+.order-heading > p:last-child {
+  color: #846e76;
+  line-height: 1.7;
+}
+
+.order-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(260px, 0.9fr);
+  align-items: start;
+  gap: 26px;
+}
+
+.order-form-card,
+.order-summary-card {
+  background: #fff;
+  border: 1px solid #f0e3e7;
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 10px 35px rgba(67, 42, 50, 0.06);
+  min-width: 0;
+}
+
+.order-form-card h2,
+.order-summary-card h2 {
+  font-size: 21px;
+  margin: 0 0 22px;
+}
+
+.order-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 19px;
+  min-width: 0;
+}
+
+.order-field > label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.order-field input,
+.order-field select,
+.order-field textarea {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  border: 1px solid #e3d4da;
+  border-radius: 9px;
+  background: #fff;
+  padding: 12px 13px;
+  font: inherit;
+  color: #432a32;
+  outline: none;
+}
+
+.order-field input:focus,
+.order-field select:focus,
+.order-field textarea:focus {
+  border-color: #9a5470;
+  box-shadow: 0 0 0 3px rgba(154, 84, 112, 0.1);
+}
+
+.order-field textarea {
+  resize: vertical;
+}
+
+.order-form-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.order-divider {
+  border: 0;
+  border-top: 1px solid #f0e3e7;
+  margin: 25px 0;
+}
+
+.order-choice-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.order-choice {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #e3d4da;
+  border-radius: 9px;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.order-choice input {
+  accent-color: #6f263d;
+}
+
+.order-summary-card {
+  position: sticky;
+  top: 24px;
+}
+
+.order-cake-image {
+  display: block;
+  width: 100%;
+  height: 230px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 22px;
+}
+
+.order-summary-label {
+  color: #9a5470;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 18px 0 6px;
+}
+
+.order-summary-card h3 {
+  margin: 0;
+}
+
+.order-price-row,
+.order-total-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.order-total-row {
+  border-top: 1px solid #f0e3e7;
+  padding-top: 18px;
+  font-size: 18px;
+}
+
+.order-total-row strong {
+  color: #6f263d;
+}
+
+.order-summary-footnote,
+.order-price-warning {
+  font-size: 12px;
+  color: #846e76;
+  line-height: 1.6;
+}
+
+.order-price-warning {
+  color: #a13d32;
+}
+
+.order-payment-note {
+  background: #fbf5f7;
+  border: 1px solid #f0e3e7;
+  border-radius: 12px;
+  padding: 16px;
+  margin: 24px 0;
+}
+
+.order-payment-note p {
+  font-size: 13px;
+  color: #846e76;
+  line-height: 1.6;
+}
+
+.order-primary-btn,
+.order-secondary-btn {
+  width: 100%;
+  border: 0;
+  border-radius: 9px;
+  padding: 14px 18px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.order-primary-btn {
+  background: #6f263d;
+  color: #fff;
+}
+
+.order-primary-btn:hover {
+  background: #542033;
+}
+
+.order-secondary-btn {
+  background: #fff;
+  color: #6f263d;
+  border: 1px solid #6f263d;
+}
+
+.order-success {
+  color: #247442;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+@media (max-width: 800px) {
+  .order-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .order-summary-card {
+    position: static;
+    grid-row: 1;
+  }
+}
+
+@media (max-width: 520px) {
+  .cake-order-page {
+    padding: 20px 14px 45px;
+  }
+
+  .order-form-card,
+  .order-summary-card {
+    padding: 19px;
+  }
+
+  .order-form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .order-heading {
+    margin: 28px 0;
+  }
+}
+
+/* Thank You Screen */
+.thank-you-page {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 24px;
+  background: radial-gradient(circle at top, #38204f, #130d20 65%);
+  color: #fff;
+  text-align: center;
+}
+
+.thank-you-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 650px;
+  padding: 45px 25px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.07);
+  box-shadow: 0 0 50px rgba(219, 112, 255, 0.15);
+  backdrop-filter: blur(10px);
+  animation: thankYouAppear 0.8s ease-out;
+}
+
+.thank-you-icon {
+  font-size: 65px;
+  animation: cakeBounce 1.5s ease-in-out infinite;
+}
+
+.thank-you-brand {
+  margin: 15px 0;
+  color: #ffb4e6;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.thank-you-content h1 {
+  margin: 15px 0;
+  color: #fff;
+  font-size: clamp(30px, 5vw, 48px);
+}
+
+.thank-you-message {
+  margin: 18px 0;
+  font-size: 18px;
+}
+
+.thank-you-subtitle {
+  color: #e4d8ed;
+  line-height: 1.7;
+}
+
+.thank-you-home {
+  margin-top: 25px;
+  padding: 13px 28px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #f08acb, #a879ff);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.thank-you-home:hover {
+  transform: translateY(-3px) scale(1.03);
+}
+
+/* Fireworks */
+.fireworks {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.firework {
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: hsl(var(--hue), 100%, 65%);
+  box-shadow:
+    0 -35px 0 hsl(var(--hue), 100%, 65%),
+    25px -25px 0 hsl(var(--hue), 100%, 70%),
+    35px 0 0 hsl(var(--hue), 100%, 65%),
+    25px 25px 0 hsl(var(--hue), 100%, 70%),
+    0 35px 0 hsl(var(--hue), 100%, 65%),
+    -25px 25px 0 hsl(var(--hue), 100%, 70%),
+    -35px 0 0 hsl(var(--hue), 100%, 65%),
+    -25px -25px 0 hsl(var(--hue), 100%, 70%);
+  opacity: 0;
+  animation: fireworkBurst 2.5s ease-out infinite;
+  animation-delay: var(--delay);
+}
+
+@keyframes fireworkBurst {
+  0% {
+    transform: scale(0.1) rotate(0deg);
+    opacity: 0;
+  }
+
+  15% {
+    opacity: 1;
+  }
+
+  65% {
+    transform: scale(1.2) rotate(45deg);
+    opacity: 0.9;
+  }
+
+  100% {
+    transform: scale(1.7) rotate(90deg);
+    opacity: 0;
+  }
+}
+
+@keyframes thankYouAppear {
+  from {
+    opacity: 0;
+    transform: translateY(25px) scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes cakeBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}

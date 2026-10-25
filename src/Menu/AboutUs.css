@@ -1,0 +1,238 @@
+
+.about-page {
+  min-height: 100vh;
+  background: #fffaf7;
+  color: #30202b;
+  overflow: hidden;
+}
+
+.about-hero {
+  position: relative;
+  padding: 110px 24px 100px;
+  text-align: center;
+  background:
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(245, 190, 218, 0.25),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 85% 70%,
+      rgba(219, 190, 244, 0.25),
+      transparent 35%
+    ),
+    #fffaf7;
+}
+
+.about-eyebrow,
+.about-section-label {
+  color: #a04d7c;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.about-hero h1 {
+  margin: 25px auto;
+  max-width: 900px;
+  font-size: clamp(38px, 6vw, 68px);
+  line-height: 1.15;
+  letter-spacing: -2px;
+  color: #34202e;
+}
+
+.about-hero h1 span,
+.about-story h2 span {
+  color: #bd6899;
+}
+
+.about-hero-text {
+  max-width: 620px;
+  margin: 0 auto 30px;
+  color: #766672;
+  font-size: 17px;
+  line-height: 1.9;
+}
+
+.about-primary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 15px 25px;
+  border-radius: 8px;
+  background: #49283f;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.about-primary-btn:hover {
+  background: #744363;
+  transform: translateY(-3px);
+}
+
+.about-hero-decoration {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  color: #d49abb;
+}
+
+.about-hero-decoration span {
+  position: absolute;
+  font-size: 30px;
+}
+
+.about-hero-decoration span:nth-child(1) {
+  top: 23%;
+  left: 12%;
+}
+
+.about-hero-decoration span:nth-child(2) {
+  right: 13%;
+  top: 35%;
+  font-size: 42px;
+}
+
+.about-hero-decoration span:nth-child(3) {
+  bottom: 15%;
+  left: 20%;
+  font-size: 38px;
+}
+
+.about-story {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 90px 25px;
+  text-align: center;
+}
+
+.about-story h2 {
+  margin: 20px 0 28px;
+  font-size: clamp(32px, 5vw, 48px);
+  line-height: 1.25;
+  letter-spacing: -1px;
+}
+
+.about-story p {
+  margin: 0 auto 18px;
+  max-width: 740px;
+  color: #776974;
+  font-size: 16px;
+  line-height: 1.95;
+}
+
+.about-values {
+  padding: 85px 24px;
+  background: #f8eff5;
+  text-align: center;
+}
+
+.about-values > h2 {
+  margin: 20px 0 45px;
+  font-size: clamp(28px, 4vw, 42px);
+  color: #34202e;
+}
+
+.about-value-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.about-value-card {
+  padding: 35px 25px;
+  border: 1px solid #f0dce9;
+  border-radius: 14px;
+  background: #fffdfc;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.about-value-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(83, 40, 70, 0.08);
+}
+
+.about-value-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: #f7e4f0;
+  color: #a04d7c;
+  font-size: 28px;
+}
+
+.about-value-card h3 {
+  margin: 22px 0 12px;
+  font-size: 20px;
+  color: #49283f;
+}
+
+.about-value-card p {
+  margin: 0;
+  color: #786b76;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.about-closing {
+  padding: 90px 24px;
+  text-align: center;
+  background: #fffaf7;
+}
+
+.about-closing h2 {
+  margin: 20px 0;
+  font-size: clamp(30px, 4vw, 44px);
+  color: #34202e;
+}
+
+.about-closing > p:not(.about-eyebrow) {
+  max-width: 570px;
+  margin: 0 auto 28px;
+  color: #776974;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 85px 20px;
+  }
+
+  .about-hero h1 {
+    letter-spacing: -1px;
+  }
+
+  .about-hero-decoration span:nth-child(1) {
+    left: 5%;
+  }
+
+  .about-hero-decoration span:nth-child(2) {
+    right: 5%;
+  }
+
+  .about-value-grid {
+    grid-template-columns: 1fr;
+    max-width: 450px;
+  }
+
+  .about-story,
+  .about-values,
+  .about-closing {
+    padding: 65px 20px;
+  }
+}
