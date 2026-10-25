@@ -1,7 +1,7 @@
 
 import { useNavigate, useParams } from "react-router-dom";
 import { menuCategories, getProductImage } from "./MenuData";
-import "./Menu.css";
+import "./menu.css";
 
 export default function MenuPage() {
   const { categoryId } = useParams();
