@@ -42,6 +42,7 @@ export default function CakeDesigns() {
       <div className="category-grid">
         {designs.map((design, index) => {
           const imageSrc = getProductImage(design.image);
+          const price = design.price ?? product.price;
 
           return (
             <div className="category-card" key={index}>
@@ -65,8 +66,15 @@ export default function CakeDesigns() {
                 <h3>{design.name}</h3>
                 <p>{product.name}</p>
 
+                {price != null ? (
+                  <h3>₹{price}</h3>
+                ) : (
+                  <p>Price not added yet</p>
+                )}
+
                 <button
                   className="primary-button"
+                  disabled={price == null}
                   onClick={() =>
                     navigate("/cake-order", {
                       state: {
@@ -74,7 +82,7 @@ export default function CakeDesigns() {
                         productName: product.name,
                         designName: design.name,
                         image: design.image,
-                        price: design.price ?? product.price ?? 0,
+                        price,
                       },
                     })
                   }
