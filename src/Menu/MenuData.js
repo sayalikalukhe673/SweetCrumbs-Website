@@ -143,7 +143,7 @@ const StrawBerryIceCreame = [
 const vanillaIceCreame = [
   { name: "Design 1", image: "vanilla-ice-cream-cake1.jpg" },
   { name: "Design 2", image: "vanilla-ice-cream-cake2.jpg" },
-  { name: "Design 3", image: "vanilla-ice-cream-cake3.jpg" },
+  //{ name: "Design 3", image: "vanilla-ice-cream-cake3.jpg" },
   { name: "Design 4", image: "vanilla-ice-cream-cake4.jpg" },
   
    
